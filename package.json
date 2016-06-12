@@ -1,0 +1,34 @@
+{
+  "name": "simian-react-button",
+  "version": "0.0.1",
+  "description": "A button component that helps you standardise your buttons. Supply your own css or use the one provided.",
+  "main": "lib/simian-react-button.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akshat1/simian-react-button.git"
+  },
+  "keywords": [
+    "react",
+    "button"
+  ],
+  "author": "akshat.sh@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akshat1/simian-react-button/issues"
+  },
+  "homepage": "https://github.com/akshat1/simian-react-button#readme",
+  "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.9.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "lodash": "^4.13.1",
+    "react": "^15.1.0"
+  }
+}
