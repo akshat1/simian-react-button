@@ -5,10 +5,10 @@ ever release more simian widgets.
 */
 
 const Size = {
-  Small  : 'Small',
-  Medium : 'Medium',
-  Large  : 'Large'
+  SMALL  : 'SMALL',
+  MEDIUM : 'MEDIUM',
+  LARGE  : 'LARGE'
 };
-Size.Default = Size.Medium;
+Size.DEFAULT = Size.MEDIUM;
 
 module.exports = Size;

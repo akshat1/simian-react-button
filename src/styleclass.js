@@ -8,18 +8,18 @@ const Modifier = require('./modifier.js');
 
 
 const SizeStyleClass = {};
-SizeStyleClass[Size.Small]  = 'simian-small';
-SizeStyleClass[Size.Medium] = 'simian-medium';
-SizeStyleClass[Size.Large]  = 'simian-large';
+SizeStyleClass[Size.SMALL]  = 'simian-small';
+SizeStyleClass[Size.MEDIUM] = 'simian-medium';
+SizeStyleClass[Size.LARGE]  = 'simian-large';
 
 
 const TypeStyleClass = {};
-TypeStyleClass[Type.Indicator] = 'simian-button-type-indicator';
-TypeStyleClass[Type.Close]     = 'simian-button-type-close';
+TypeStyleClass[Type.INDICATOR] = 'simian-button-type-indicator';
+TypeStyleClass[Type.CLOSE]     = 'simian-button-type-close';
 
 
 const ModifierStyleClass = {};
-ModifierStyleClass[Primary] = 'simian-button-primary';
+ModifierStyleClass[Modifier.PRIMARY] = 'simian-modifier-primary';
 
 
 const StyleClass = {

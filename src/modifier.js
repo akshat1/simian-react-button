@@ -5,5 +5,5 @@ ever release more simian widgets.
 */
 
 module.exports = {
-  Primary: 'primary'
+  PRIMARY: 'PRIMARY'
 };

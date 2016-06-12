@@ -17,12 +17,12 @@ class Button extends React.Component {
   render() {
     let props = this.props;
     let classNames = [
-      StyleClass.Modifier.Button
+      StyleClass.Button
     ];
     let icon = null;
     let {
-      type: buttonType = ButtonType.Normal,
-      size: buttonSize = ButtonSize.Default,
+      type: buttonType = ButtonType.NORMAL,
+      size: buttonSize = ButtonSize.DEFAULT,
       disabled,
       label,
       onClick = _.noop,
@@ -30,20 +30,20 @@ class Button extends React.Component {
       className,
       primary
     } = props;
-    if (buttonType === ButtonType.Indicator)
-      classNames.push(StyleClass.Type.Indicator);
+    if (buttonType === ButtonType.INDICATOR)
+      classNames.push(StyleClass.Type.INDICATOR);
 
-    else if (buttonType === ButtonType.Close) {
+    else if (buttonType === ButtonType.CLOSE) {
       faIconName = 'close';
       buttonSize = ButtonSize.Small;
-      classNames.push(StyleClass.Type.Close);
+      classNames.push(StyleClass.Type.CLOSE);
     }
 
     if (className)
       classNames.push(className);
 
     if (primary)
-      classNames.push(StyleClass.Modifier.Primary);
+      classNames.push(StyleClass.Modifier.PRIMARY);
 
     classNames.push(StyleClass.Size[buttonSize]);
 
@@ -58,6 +58,7 @@ class Button extends React.Component {
         onClick   = {onClick}
         >
         {icon}
+        {props.children}
         {label}
       </button>
     );

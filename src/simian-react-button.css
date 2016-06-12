@@ -1,0 +1,102 @@
+$space-S                         : 5px;
+$space-M                         : 10px;
+$border-radius-S                 : 2px;
+$border-color                    : #A0A0A0;
+$border-color-light              : #F0F0F0;
+$primary-button-background-color : orange;
+$background-light                : #FFF;
+$background-dark                 : darken($background-light, 5%);
+$text-base                       : #000;
+$text-light                      : lighten($text-base, 50%);
+$box-shadow-base                 : 1px 1px 3px rgba(0, 0, 0, 0.4);
+$box-shadow-raised               : 3px 4px 7px rgba(0, 0, 0, 0.4);
+$box-shadow-raised-halfway       : 2px 2px 4px rgba(0, 0, 0, 0.6);
+
+
+@define-mixin button {
+  border-radius: $border-radius-S;
+  border: 1px solid $border-color;
+  background: $background-dark;
+  color: $text-base;
+  box-shadow: $box-shadow-base;
+  height: 35px;
+  font-size: 0.9em;
+  transition: all 0.15s;
+  text-align: left;
+  padding: 0 $space-M;
+
+  &.simian-small {
+    min-width: 50px;
+  }
+
+  &.simian-medium {
+    min-width: 100px;
+  }
+
+  &.simian-large {
+    min-width: 150px;
+  }
+
+  .fa {
+    margin-right: $space-S;
+    font-size: 1.2em;
+  }
+
+  &:hover {
+    box-shadow: $box-shadow-raised;
+  }
+
+  &:active {
+    border-color: darken($border-color, 30%);
+    box-shadow: $box-shadow-raised-halfway;
+  };
+
+
+  &[disabled] {
+    border-color: $border-color-light;
+    background: $background-dark;
+    color: opacity($text-light, 25%);
+    box-shadow: none;
+  }
+
+
+  &.simian-modifier-primary {
+    background: orange;
+
+    &[disabled] {
+      background: lighten($primary-button-background-color, 75%);
+    }
+  }
+
+
+  &.simian-button-type-indicator {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    min-width: auto;
+    padding: 0;
+    width: 16px;
+  }
+
+
+  &.simian-button-type-close {
+    min-width: 0;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    text-align: center;
+
+    .fa {
+      margin-right: 0;
+    }
+  }
+}
+
+
+.simian-button {
+  @mixin button;
+
+  + .simian-button {
+    margin-left: $space-M;
+  }
+}
