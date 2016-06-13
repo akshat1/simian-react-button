@@ -1,6 +1,6 @@
 {
   "name": "simian-react-button",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A button component that helps you standardise your buttons. Supply your own css or use the one provided.",
   "files": [
     "lib"

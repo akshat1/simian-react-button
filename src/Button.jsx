@@ -28,7 +28,8 @@ class Button extends React.Component {
       onClick = _.noop,
       faIconName,
       className,
-      primary
+      primary,
+      style = {}
     } = props;
     if (buttonType === ButtonType.INDICATOR)
       classNames.push(StyleClass.Type.INDICATOR);
@@ -56,6 +57,7 @@ class Button extends React.Component {
         className = {`${classNames.join(' ')}`}
         disabled  = {disabled}
         onClick   = {onClick}
+        style     = {style}
         >
         {icon}
         {props.children}
@@ -74,7 +76,8 @@ Button.propTypes = {
   label      : React.PropTypes.string.isRequired,
   onClick    : React.PropTypes.func,
   faIconName : React.PropTypes.string,
-  primary    : React.PropTypes.bool
+  primary    : React.PropTypes.bool,
+  style      : React.PropTypes.object
 };
 
 
