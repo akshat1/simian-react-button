@@ -73,7 +73,7 @@ Button.propTypes = {
   type       : React.PropTypes.oneOf(_.values(ButtonType)),
   size       : React.PropTypes.oneOf(_.values(ButtonSize)),
   disabled   : React.PropTypes.bool,
-  label      : React.PropTypes.string.isRequired,
+  label      : React.PropTypes.string,
   onClick    : React.PropTypes.func,
   faIconName : React.PropTypes.string,
   primary    : React.PropTypes.bool,

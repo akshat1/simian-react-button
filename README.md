@@ -20,7 +20,7 @@ const {
   type       = {ButtonType.INDICATOR}      // one of the button type enum values. NORMAL by default.
   size       = {ButtonSize.LARGE}          // one of the button size enum values. MEDIUM by default
   disabled   = {false}                     // a boolean
-  label      = 'a string label. required.'
+  label      = 'a string label'
   onClick    = {eventHandlerFunction}
   primary    = {true}                      // a boolean
   faIconName = 'string font-awesome icon name'
