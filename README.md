@@ -64,3 +64,25 @@ If you want, you can supply the name of a font-awesome icon as faIconName proper
 </button>
 ```
 An icon name like 'eye-slash' will cause the inner div to have the class 'fa fa-eye-slash'. Refer to the Font Awesome documentation to see the list of available icons.
+
+
+### The class-names
+The classnames corresponding to various sizes and modifiers are follows
+```
+{
+  "Button": "simian-button",
+  "Modifier": {
+    "PRIMARY": "simian-modifier-primary"
+  },
+  "Type": {
+    "NORMAL": "",
+    "INDICATOR": "simian-button-type-indicator",
+    "CLOSE": "simian-button-type-close"
+  },
+  "Size": {
+    "SMALL": "simian-small",
+    "MEDIUM": "simian-medium",
+    "LARGE": "simian-large"
+  }
+}
+```
